@@ -1,0 +1,170 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body > div {
+  max-width: 1100px;
+  margin: 100px auto;
+  padding: 0 1em;
+}
+
+div.wider {
+  max-width: 1300px;
+}
+
+div.wider img {
+  width: 100%;
+}
+
+a, p, h1 {
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h1, h2, a {
+  color: #548080;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio h2 {
+  font-size: 4rem;
+  text-align: right;
+}
+
+.tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.tiles > div {
+  flex: none;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.tiles p {
+  display: inline;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0.5em auto;
+  color: #FFFFFF;
+  z-index: 10;
+  background-color: #54808090;
+}
+
+.tiles img {
+  filter: grayscale(100%);
+  transition: all 500ms ease;
+}
+
+.tiles img:hover {
+  filter: grayscale(0%);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.header > div {
+  flex: 1;
+}
+
+.footer {
+  background-color: #548080;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.footer p {
+  color: #FFFFFF;
+  padding: 1rem;
+}
+
+.right-column {
+  text-align: right;
+}
+
+.right-column a {
+  display: inline-block;
+}
+
+.nav {
+  text-align: center;
+}
+
+.download {
+  text-align: right;
+}
+
+.button a {
+  font-weight: bold;
+  padding: 0.8rem 1.4rem;
+  font-size: 1.4rem;
+  border: 3px solid #548080;
+  border-radius: 100px;
+  text-decoration: none;
+  white-space: nowrap;
+  display: inline-block;
+  margin: 1rem;
+}
+
+.button a:hover {
+  background-color: #548080;
+  color: #FFFFFF;
+}
+
+.download a {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 660px) {
+  body > div {
+    margin-top: 20px;
+    margin-bottom: 70px;
+  }
+  .tiles {
+    justify-content: center;
+  }
+}
